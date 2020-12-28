@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
   font-family: Gilroy;
+  margin: 0;
+  padding: 0;
 }
 html {
   margin: 0 auto;
@@ -8,13 +10,12 @@ html {
 }
 
 .wrapper {
-  /* margin: 0 auto; */
   max-width: 1440px;
 
   background-image: url("../img/bg_main.svg");
   background-color: #d9faff;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 section {
@@ -449,4 +450,72 @@ footer {
 .footer {
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 1300px) {
+  .header_title {
+    margin: 70px auto 0;
+  }
+}
+
+@media (max-width: 1070px) {
+  .header_title {
+    margin: 0 auto;
+  }
+  .possibility_title {
+    margin-top: 140px;
+  }
+
+  .possibility_post,
+  .possibility_net,
+  .possibility_video {
+    margin-right: 0px;
+    margin-left: 10px;
+  }
+
+  .tariff_plans {
+    display: block;
+  }
+  .dark_blue_plan,
+  .blue_plan {
+    margin: 30px auto;
+  }
+}
+
+@media (max-width: 950px) {
+  .header_link a,
+  .header_logo a {
+    font-size: 20px;
+    margin-top: 31px;
+  }
+  .header_logo a {
+    margin-top: 10px;
+  }
+  .header_title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .header_subtitle {
+    margin: 10px auto 0;
+  }
+  .header_button button,
+  .main_button {
+    margin: 20px auto 0px;
+  }
+  .possibility_post,
+  .possibility_net,
+  .possibility_video,
+  .possibility_info {
+    display: block;
+    margin: 30px auto;
+  }
+
+  .subscribers {
+    display: block;
+    margin: 0 auto;
+  }
+  .subscribers_foto img {
+    display: block;
+    margin: 0 auto;
+  }
 }
