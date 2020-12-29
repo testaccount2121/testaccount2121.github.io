@@ -550,6 +550,12 @@ footer {
     background-size: cover;
   }
   .header_section {
+    min-height: 800px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .header_section {
     min-height: 100vh;
   }
 }
